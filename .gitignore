@@ -3,3 +3,4 @@ coverage.*
 modem-scraper
 VERSION
 
+scraper_config.yaml

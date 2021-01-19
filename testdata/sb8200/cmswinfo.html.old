@@ -86,15 +86,15 @@ $(document).ready(function(){
 		</tr>
 		<tr>
         	<td><strong>Software Version</strong></td>
-    		<td >D31CM-PEREGRINE-1.1.1.0-GA-11-NOSH</td>
+    		<td >SB8200.0200.174F.311915.NSH.RT.NA</td>
 		</tr>
 		<tr>
         	<td ><strong>Cable Modem MAC Address</strong></td>
-    		<td>B0:DA:F9:2A:7B:05</td>
+    		<td>TH:IS:IS:FA:KE:00</td>
 		</tr>
 		<tr>
         	<td><strong>Serial Number</strong></td>
-    		<td>7A73W19CD402635</td>
+    		<td>THISISFAKE12345</td>
 		</tr>		
 	</table>
 	
@@ -108,7 +108,7 @@ $(document).ready(function(){
        
 		<tr>
         	<td width="60%"><strong>Up Time</strong></td>
-    		<td width="40%">1 days 04h:46m:53s.00</td></tr>                	
+    		<td width="40%">1 days 14h:12m:38s.00</td></tr>                	
 				       		
 	</table>
 </div>

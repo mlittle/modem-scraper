@@ -78,32 +78,6 @@ $(document).ready(function(){
             <table class='simpleTable'>
                  <tr><th>Time</th><th>Priority</th><th>Description</th></tr>
                  <tr>
-<td width="169">1-19-2021, 15:47:26</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 15:47:26</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 14:9:15</td><td width="87" align="center">Notice(6)</td><td width="450">"CM-STATUS message sent. Event Type Code: 24; Chan ID: 17 ; DSID: N/A; MAC Addr: N/A; OFDM/OFDMA Profile ID: 2 .;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 10:51:5</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 10:51:5</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 6:37:44</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 6:37:44</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 1:55:6</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters Time Protocol Servers modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 1:55:6</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-19-2021, 1:55:6</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-18-2021, 21:33:55</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters Time Protocol Servers modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-18-2021, 21:33:55</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
-<td width="169">1-18-2021, 21:33:55</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
-<tr>
 <td width="169">1-18-2021, 12:26:21</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters Time Protocol Servers modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
 <tr>
 <td width="169">1-18-2021, 12:26:21</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
@@ -150,4 +124,68 @@ $(document).ready(function(){
 <tr>
 <td width="169">1-1-1970, 0:0:49</td><td width="87" align="center">Critical(3)</td><td width="450">"DHCP FAILED - Discover sent, no offer received;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
 <tr>
-<td width="169">1-1-1970, 0:0:37</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00
+<td width="169">1-1-1970, 0:0:37</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:0:23</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:0:18</td><td width="87" align="center">Critical(3)</td><td width="450">"SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 11:1:10</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 11:1:9</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 11:1:4</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 11:0:49</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 11:0:29</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 11:0:23</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:57:51</td><td width="87" align="center">Critical(3)</td><td width="450">"No Maintenance Broadcasts for Ranging opportunities received - T2 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:57:33</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:56:33</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:56:3</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Ranging Received Abort Response - Re-initializing MAC;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:55:23</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:54:0</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:53:30</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Ranging Received Abort Response - Re-initializing MAC;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:53:30</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:53:9</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:52:39</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Ranging Received Abort Response - Re-initializing MAC;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:52:31</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:52:22</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:51:53</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Ranging Received Abort Response - Re-initializing MAC;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:51:51</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:51:21</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Ranging Received Abort Response - Re-initializing MAC;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:50:39</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:50:1</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 10:49:31</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Ranging Received Abort Response - Re-initializing MAC;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<
+            </table>
+       </center>         
+		<!--% GetRgCfgValue("SnmpEventLog"); %-->        
+	<!--tr><td align="Center" colspan="3">
+		<input type="submit" value="Clear Log" disabled OnClick="ClearLog();" >
+		<input type="hidden" name="SnmpClearEventLog">
+	</td></tr-->	
+    
+</form>
+</div><!-- end Content 

@@ -7,13 +7,13 @@ import (
 	"os"
 	"os/signal"
 
+	"github.com/kr/pretty"
 	"github.com/pdunnavant/modem-scraper/config"
 	"github.com/pdunnavant/modem-scraper/influxdb"
 	_ "github.com/pdunnavant/modem-scraper/mqtt"
 	"github.com/pdunnavant/modem-scraper/scrape"
 	"github.com/robfig/cron"
 	"github.com/spf13/viper"
-        "github.com/kr/pretty"
 )
 
 // BuildVersion is the version of the binary, and is set with ldflags at build time.
@@ -46,9 +46,12 @@ func main() {
 	}
 
 	pollmodem(*configuration)
+	fmt.Println("Goodbye")
+	os.Exit(0)
 
 	c := cron.New()
-	c.AddFunc(configuration.PollSchedule, func() { pollmodem(*configuration)
+	c.AddFunc(configuration.PollSchedule, func() {
+		pollmodem(*configuration)
 	})
 	go c.Start()
 
@@ -66,12 +69,13 @@ func pollmodem(configuration config.Configuration) {
 		fmt.Println(err.Error())
 		return
 	}
-
+	fmt.Println(modemInformation.ToJSON())
+	return
 	err = influxdb.Publish(configuration.InfluxDB, *modemInformation)
 	if err != nil {
 		fmt.Println(err.Error())
 		return
-		}
+	}
 
 	//err = mqtt.Publish(configuration.MQTT, *modemInformation)
 	//if err != nil {

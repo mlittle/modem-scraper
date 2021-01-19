@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	dateTimeLayout = "01/02/2006 15:04 MST"
+	dateTimeLayout = "1-2-2006, 15:4:5 MST"
 )
 
 // EventLog holds data pulled from the /cmeventlog.html page.
@@ -18,6 +18,7 @@ type EventLog struct {
 	DateTime    string
 	EventID     int
 	EventLevel  int
+	Priority    string
 	Description string
 }
 
@@ -28,9 +29,10 @@ func (e EventLog) ToInfluxPoints() ([]*client.Point, error) {
 	// No tags for this specific struct.
 	tags := map[string]string{}
 	fields := map[string]interface{}{
-		"date_time":   e.DateTime,
-		"event_id":    e.EventID,
-		"event_level": e.EventLevel,
+		"date_time": e.DateTime,
+		//"event_id":    e.EventID,
+		//"event_level": e.EventLevel,
+		"priority":    e.Priority,
 		"description": e.Description,
 	}
 	point, err := client.NewPoint("event_log", tags, fields, time.Now())
@@ -65,10 +67,11 @@ func scrapeEventLogs(doc *goquery.Document) []EventLog {
 func makeEventLog(selection *goquery.Selection) EventLog {
 	rowData := selection.Children()
 	eventLog := EventLog{
-		DateTime:    rowData.Get(0).FirstChild.Data,
-		EventID:     getIntRowData(rowData, 1),
-		EventLevel:  getIntRowData(rowData, 2),
-		Description: rowData.Get(3).FirstChild.Data,
+		DateTime: rowData.Get(0).FirstChild.Data,
+		//EventID:     getIntRowData(rowData, 1),
+		//EventLevel:  getIntRowData(rowData, 2),
+		Priority:    rowData.Get(1).FirstChild.Data,
+		Description: rowData.Get(2).FirstChild.Data,
 	}
 
 	eventLog.DateTime, _ = formatTime(eventLog.DateTime)

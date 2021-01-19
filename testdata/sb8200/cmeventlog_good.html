@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Log</title>
+
+<script src="jquery-1.7.1.min.js"></script>
+<script src="json2.js"></script>
+<script src="main_arris.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#htmlheader").load("htmlheader.htm");
+});
+</script>
+<div id="htmlheader"></div>
+</head>
+<body>
+ <!-- Header Area Begin -->
+<div class="header">
+
+<script>
+$(document).ready(function(){
+	$("#pageheaderA").load("pageheaderA.htm");       
+});
+</script>
+
+         <div id="binnacleWrapper1" class="binnacleItems_hide" style="display:none;">
+            <div id="binnacleWrapper2" class="binnacleItems_hide" style="display:none;">
+                <div id="binnacleWrapperLeft"><img src="px1_Ux.png" alt="" class="binnacleWrapperShim"></div>
+                <div id="binnacleWrapperRight"><img src="px1_Ux.png" alt="" class="binnacleWrapperShim"></div>
+                <div id="binnacleWrapperMiddle">
+                    <div id="binnacleInnards">
+                            <div id="binnacleIndicatorWrap"></div>
+                    <div id="binnacleModelName"><span id="thisModelNumberIs">SB8200</span></div>
+                    </div>
+                </div>
+            <!-- end binnacleWrapper1/2 -->
+            </div>
+        </div>
+
+<div id="pageheaderA"></div>
+
+<!--gap--><div id="tmtg"><div class="gap1"><div class="gap2"><div class="gap3"><div class="gap4"></div></div></div></div></div>
+
+                <div id="tmg1"><div id="tmg2"><div id="tmg3"><div id="tmg4"><div id="tmg5"><div id="tmg6">
+
+<div id="topMenu"></div>
+
+<!-- START pageheaderB.htm ADDITIONS -->
+                <!-- end divs for tmg -->
+                </div></div></div></div></div></div>
+
+                <!--gap--><div id="tmbg"><div class="gap1"><div class="gap2"><div class="gap3"><div class="gap4"></div></div></div></div></div>
+
+                <div id="bg1"><div id="bg2"><div id="bg3"><div id="bg4">
+<!-- END pageheaderB.htm ADDITIONS -->
+
+</div> <!-- End Header -->
+
+	<div class="container">
+		<div class="subHeader">
+        	<div class="subHeadcontent">Event Log</div>
+        </div>
+        
+	<div class="breadcrumbs"> 
+    	<a href="cmeventlog.html">Status</a> > Event Log 
+    </div>
+
+	<div class="content">
+		<div class="introText">
+        <p>The table below contains the log of events that the SB8200 has detected. This log can be important to the service provider to help diagnose and correct problems, if any should occur.
+		</p>
+        </div>
+
+<form action="/goform/RgEventLog.pl" method="post" name="RgEventLog">
+
+      <center>
+            <table class='simpleTable'>
+                 <tr><th>Time</th><th>Priority</th><th>Description</th></tr>
+                 <tr>
+<td width="169">1-19-2021, 15:47:26</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 15:47:26</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 14:9:15</td><td width="87" align="center">Notice(6)</td><td width="450">"CM-STATUS message sent. Event Type Code: 24; Chan ID: 17 ; DSID: N/A; MAC Addr: N/A; OFDM/OFDMA Profile ID: 2 .;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 10:51:5</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 10:51:5</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 6:37:44</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 6:37:44</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 1:55:6</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters Time Protocol Servers modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 1:55:6</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-19-2021, 1:55:6</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 21:33:55</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters Time Protocol Servers modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 21:33:55</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters UTC Time Offset modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 21:33:55</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 12:26:21</td><td width="87" align="center">Notice(6)</td><td width="450">"DHCP Renew - lease parameters Time Protocol Servers modified;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 12:26:21</td><td width="87" align="center">Error(4)</td><td width="450">"DHCP RENEW WARNING - Field invalid in response v4 option;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 7:50:32</td><td width="87" align="center">Notice(6)</td><td width="450">"DS profile assignment change. DS Chan ID: 32; Previous Profile: ; New Profile: 1 2 .;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 7:50:25</td><td width="87" align="center">Notice(6)</td><td width="450">"TLV-11 - unrecognized OID;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 7:50:25</td><td width="87" align="center">Error(4)</td><td width="450">"Missing BP Configuration Setting TLV Type: 17.9;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 7:50:25</td><td width="87" align="center">Error(4)</td><td width="450">"Missing BP Configuration Setting TLV Type: 17.8;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:2:33</td><td width="87" align="center">Warning(5)</td><td width="450">"DHCP WARNING - Non-critical field invalid in response ;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:2:31</td><td width="87" align="center">Notice(6)</td><td width="450">"Honoring MDD; IP provisioning mode = IPv4"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:2:29</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:2:13</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:0:18</td><td width="87" align="center">Critical(3)</td><td width="450">"SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 6:6:29</td><td width="87" align="center">Critical(3)</td><td width="450">"Unicast Maintenance Ranging attempted - No response - Retries exhausted;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 6:6:29</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-18-2021, 6:5:49</td><td width="87" align="center">Critical(3)</td><td width="450">"No Ranging Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:3:44</td><td width="87" align="center">Critical(3)</td><td width="450">"SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:3:43</td><td width="87" align="center">Critical(3)</td><td width="450">"SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:2:21</td><td width="87" align="center">Critical(3)</td><td width="450">"Received Response to Broadcast Maintenance Request, But no Unicast Maintenance opportunities received - T4 time out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:1:51</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:1:37</td><td width="87" align="center">Critical(3)</td><td width="450">"DHCP FAILED - Discover sent, no offer received;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:1:35</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:1:5</td><td width="87" align="center">Critical(3)</td><td width="450">"DHCP FAILED - Discover sent, no offer received;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:1:4</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:0:49</td><td width="87" align="center">Critical(3)</td><td width="450">"DHCP FAILED - Discover sent, no offer received;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00:01:5c:7c:9a:57;CM-QOS=1.1;CM-VER=3.1;"</td></tr>
+<tr>
+<td width="169">1-1-1970, 0:0:37</td><td width="87" align="center">Critical(3)</td><td width="450">"Started Unicast Maintenance Ranging - No Response received - T3 time-out;CM-MAC=b0:da:f9:2a:7b:05;CMTS-MAC=00

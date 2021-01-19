@@ -15,7 +15,8 @@ const (
 
 // EventLog holds data pulled from the /cmeventlog.html page.
 type EventLog struct {
-	DateTime    string
+	DateTimeRaw string
+	DateTime    time.Time
 	EventID     int
 	EventLevel  int
 	Priority    string
@@ -29,13 +30,13 @@ func (e EventLog) ToInfluxPoints() ([]*client.Point, error) {
 	// No tags for this specific struct.
 	tags := map[string]string{}
 	fields := map[string]interface{}{
-		"date_time": e.DateTime,
+		//"date_time": e.DateTime,
 		//"event_id":    e.EventID,
 		//"event_level": e.EventLevel,
 		"priority":    e.Priority,
 		"description": e.Description,
 	}
-	point, err := client.NewPoint("event_log", tags, fields, time.Now())
+	point, err := client.NewPoint("event_log", tags, fields, e.DateTime)
 	if err != nil {
 		return nil, fmt.Errorf("error generating points data for EventLog: %s", err.Error())
 	}
@@ -57,7 +58,10 @@ func scrapeEventLogs(doc *goquery.Document) []EventLog {
 		// Skip the "title" row as well as the "header" row.
 		// These are both regular old <tr> rows on this page.
 		if index > 0 {
-			eventLogs = append(eventLogs, makeEventLog(row))
+			event := makeEventLog(row)
+			if len(event.Description) > 0 {
+				eventLogs = append(eventLogs, event)
+			}
 		}
 	})
 
@@ -65,29 +69,36 @@ func scrapeEventLogs(doc *goquery.Document) []EventLog {
 }
 
 func makeEventLog(selection *goquery.Selection) EventLog {
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Println("MakeEventLog Failed. Maybe crappy eventlog entry. Error:", err)
+		}
+	}()
+
 	rowData := selection.Children()
 	eventLog := EventLog{
-		DateTime: rowData.Get(0).FirstChild.Data,
+		DateTimeRaw: rowData.Get(0).FirstChild.Data,
 		//EventID:     getIntRowData(rowData, 1),
 		//EventLevel:  getIntRowData(rowData, 2),
 		Priority:    rowData.Get(1).FirstChild.Data,
 		Description: rowData.Get(2).FirstChild.Data,
 	}
 
-	eventLog.DateTime, _ = formatTime(eventLog.DateTime)
+	eventLog.DateTime, _ = formatTime(eventLog.DateTimeRaw)
 
 	return eventLog
 }
 
-func formatTime(datetime string) (string, error) {
+func formatTime(datetime string) (time.Time, error) {
 	now := time.Now()
 	zone, _ := now.Zone()
 	t, err := time.Parse(dateTimeLayout, datetime+" "+zone)
 	if err != nil {
 		fmt.Println(err)
-		return datetime, err
+		return time.Now(), err
 	}
-	return t.Format(time.RFC3339), nil
+	return t, nil
+	//return t.Format(time.RFC3339), nil
 }
 
 func buildEventLogPoints(logs []EventLog) ([]*client.Point, error) {

@@ -43,8 +43,7 @@ func Scrape(config config.Configuration) (*ModemInformation, error) {
 
 func getDocumentFromURL(url string) (*goquery.Document, error) {
 	fmt.Printf("Grabbing [%s]...\n", url)
-
-	start := time.Now()
+	defer timeTrack(time.Now(), fmt.Sprintf("Got [%s].", url))
 
 	// TODO: add a timeout here (10s?)
 	resp, err := http.Get(url)
@@ -62,8 +61,10 @@ func getDocumentFromURL(url string) (*goquery.Document, error) {
 		return nil, err
 	}
 
-	elapsed := time.Since(start)
-	fmt.Printf("Got [%s]. (Took %s.)\n", url, elapsed)
-
 	return doc, nil
+}
+
+func timeTrack(start time.Time, name string) {
+	elapsed := time.Since(start)
+	fmt.Printf("%s (Took %s.)\n", name, elapsed)
 }

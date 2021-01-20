@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  modemscraper:
+    image: modemscraper
+    container_name: modemscraper
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks: 
+      - influx_network
+networks: 
+  influx_network:
+    external: 
+      name: influx_network

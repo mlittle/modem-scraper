@@ -46,8 +46,9 @@ func main() {
 	}
 
 	pollmodem(*configuration)
-	fmt.Println("Goodbye")
-	os.Exit(0)
+	//fmt.Println("Goodbye")
+	//
+	//os.Exit(0)
 
 	c := cron.New()
 	c.AddFunc(configuration.PollSchedule, func() {
@@ -69,8 +70,8 @@ func pollmodem(configuration config.Configuration) {
 		fmt.Println(err.Error())
 		return
 	}
-	fmt.Println(modemInformation.ToJSON())
-	return
+	//fmt.Println(modemInformation.ToJSON())
+	//return
 	err = influxdb.Publish(configuration.InfluxDB, *modemInformation)
 	if err != nil {
 		fmt.Println(err.Error())

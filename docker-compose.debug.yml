@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  modemscraper:
+    image: modemscraper
+    build:
+      context: .
+      dockerfile: ./Dockerfile
